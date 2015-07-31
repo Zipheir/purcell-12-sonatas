@@ -9,7 +9,15 @@
 	right-margin  = 40\pt
 	top-margin    = 40\pt
 	bottom-margin = 40\pt
+	system-system-spacing #'minimum-distance = #14
 }
+
+% ugly alignment details here
+vivace = \markup { \raise #1 { \halign #0.2 \bold Vivace } }
+adagio = \markup { \raise #1 { \bold Adagio } }
+presto = \markup { \raise #1 { \halign #-0.7 \bold Presto } }
+largo  = \markup { \raise #1.4 { \halign #0.4 \bold Largo } }
+dalseg = \markup { \halign #-3.5 D.S. }
 
 vlone = \relative c'' {
 	\clef treble \key g \minor \time 2/2
@@ -38,8 +46,9 @@ vlone = \relative c'' {
 	d8 d c2 bes8. a16
 	a4. g8 g2 \bar "||"                     % m 24
 
-	\time 3/2 \mark "Vivace"
-	r1. r1. r1. r1.                         % m 28
+	\time 3/2
+	r1.^\vivace
+	r1. r1. r1.                             % m 28
 	r4 g'8 f e4 a d, g
 	c, f8 es d4 g c, f
 	bes,4 es8 d c4 f bes, es
@@ -77,8 +86,8 @@ vlone = \relative c'' {
 	d, g g2. fis4
 	g1. \bar "||"
 
-	\time 2/2 \mark "Adagio"
-	d4 d8. d16 d2 ~
+	\time 2/2
+	d4^\adagio d8. d16 d2 ~
 	d4 es8. f16 d4. c8                      % m 68
 	c2 r4 es8. es16
 	es8( a,4) a8 a4 a'8. a16
@@ -90,7 +99,7 @@ vlone = \relative c'' {
 	f8( c4) c8 c4 d8. d16                   % m 76
 	d8( g,) c8. c16 c8( fis,8) fis8. fis16
 	g4 g8. a16 fis4. g8
-	g2 \mark "Presto" r
+	g2^\presto r
 	r2 r4 d'                                % m 80
 	es4. d16 c d8 g, g' f
 	es d c bes a f f'4 ~
@@ -132,8 +141,8 @@ vlone = \relative c'' {
 	c bes a4. g8
 	g1 \bar "||"
 
-	\time 3/2 \mark "Largo"
-	bes'2 g2. fis8( g                       % m 120
+	\time 3/2
+	bes'2^\largo g2. fis8( g                % m 120
 	a2) d,2. d4
 	es2 c2. bes8( c
 	d2) a2. a4
@@ -153,12 +162,12 @@ vlone = \relative c'' {
 	bes2 b2. b4                             % m 136
 	c2 c2. bes4
 	a2 a2. g4
-	fis2 fis2. d'4
-	\mark \markup { \musicglyph #"scripts.segno" }
+	fis2 fis2. d'4\p
+	\mark \markup { \small \musicglyph #"scripts.segno" }
 	d4( c) c2. c4                           % m 140
 	c( bes) bes2. bes4
 	bes( a) a2. g4
-	g2 g1\fermata \bar "|."
+	g2 g1^\dalseg\fermata \bar "|."
 }
 
 vltwo = \relative c' {
@@ -308,7 +317,7 @@ vltwo = \relative c' {
 	g2 f2. f4                       % m 136
 	e2 e2. d4
 	es2 es2. es4
-	d2 d2. bes'4
+	d2 d2. bes'4\p
 	bes4( a) a2. a4                 % m 140
 	a( g) g2. g4
 	g2 fis2. g4
@@ -644,7 +653,7 @@ continuo = \relative c'' {
 		e fis1                       % m 140
 		g2 c,1
 		d2 d,1
-		g1.\fermata
+		g1.\fermata \bar "|."
 	}
 
 	\new FiguredBass {
