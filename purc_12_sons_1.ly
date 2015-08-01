@@ -468,9 +468,9 @@ basso = \relative c {
 	g2 g1 \fermata \bar "|."
 }
 
-continuo = \relative c'' {
+continuo = {
 	<<
-	\new Voice = "main" {
+	\new Voice \relative c'' {
 		\clef soprano \key g \minor \time 2/2
 		r4 g bes4. bes8
 		\override Voice.Stem #'direction = #UP a4
