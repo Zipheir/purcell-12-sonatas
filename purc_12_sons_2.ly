@@ -2,10 +2,21 @@
 
 #(set-global-staff-size 18)
 
-adagio  = \markup { \bold Adagio }
-allegro = \markup { \bold Allegro }
-largo   = \markup { \bold Largo }
-presto  = \markup { \bold Presto }
+\paper {
+	% a4-optimized version
+	paper-size    = "a4"
+	left-margin   = 40\pt
+	right-margin  = 40\pt
+	top-margin    = 40\pt
+	bottom-margin = 40\pt
+	system-system-spacing #'minimum-distance = #14
+}
+
+% ugly alignment details here
+adagio  = \markup { \raise #1 { \halign #0.1 \bold Adagio } }
+allegro = \markup { \raise #1.5 { \halign #0 \bold Allegro } }
+largo   = \markup { \raise #1 { \halign #0 \bold Largo } }
+presto  = \markup { \raise #1 { \halign #0 \bold Presto } }
 
 vlone = \relative c'' {
 	\clef treble \key bes \major \time 2/2
