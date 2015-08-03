@@ -214,7 +214,7 @@ vltwo = \relative c' {
 	g8 c,8 f4. g8 e4
 	f4 r bes, d                       % m 24
 	f4. c8 es8. f16 d4 ~
-	d8 c4 bes a16 bes bes8.( a32 bes
+	d8 c4 bes a16 bes bes8._[( a32 bes]
 	c8) f d d16 es f8 c a a16 bes
 	c8 a f f16 g a8 f bes4 ~          % m 28
 	bes a bes2 \bar "||"
