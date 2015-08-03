@@ -577,7 +577,7 @@ continuo = {
 		e4. e'8 fis4 g8 g,
 		bes4 d4. d,8 g4              % m 12
 		fis2 g4 d'
-		f8 c a4 cis2
+		f8 c a4 c2
 		es4 g8 c, b8. c16 d8 d,
 		g4. aes8 bes2                % m 16
 		es, es'
