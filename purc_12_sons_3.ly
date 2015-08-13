@@ -2,14 +2,22 @@
 
 #(set-global-staff-size 18)
 
+%#(set-default-paper-size "letter")
+
 \paper {
-	% a4-optimized version
-	paper-size    = "a4"
+	% a4 optimized
 	left-margin   = 40\pt
 	right-margin  = 40\pt
 	top-margin    = 40\pt
 	bottom-margin = 40\pt
 	system-system-spacing #'minimum-distance = #14
+
+	% letter optimized
+%	left-margin  = 35\pt
+%	right-margin = 35\pt
+%	top-margin = 35\pt
+%	bottom-margin = 35\pt
+%	system-system-spacing #'minimum-distance = #14
 }
 
 % ugly alignment details here - a4 version
@@ -18,6 +26,13 @@ adagb = \markup { \raise #1 { \halign #-0.7 \bold Adagio } }
 alleg = \markup { \raise #2 { \halign #-0.7 \bold Allegro } }
 canz  = \markup { \raise #1 { \halign #-0.5 \bold Canzona } }
 plarg = \markup { \raise #1 { \halign #-0.5 { \bold { poco largo } } } }
+
+% letter version
+%adaga = \markup { \raise #1.2 { \halign #-0.2 \bold Adagio } }
+%adagb = \markup { \raise #1 { \halign #-0.7 \bold Adagio } }
+%alleg = \markup { \raise #2 { \halign #-0.7 \bold Allegro } }
+%canz  = \markup { \raise #1 { \halign #-0.7 \bold Canzona } }
+%plarg = \markup { \raise #1 { \halign #-0.5 { \bold { poco largo } } } }
 
 vlone = \relative c''' {
 	\clef treble \key d \minor \time 2/2
