@@ -4,7 +4,6 @@
 
 \paper {
 	% a4-optimized version
-	paper-size    = "a4"
 	left-margin   = 40\pt
 	right-margin  = 40\pt
 	top-margin    = 40\pt
