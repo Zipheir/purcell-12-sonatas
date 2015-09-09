@@ -1,15 +1,6 @@
 \version "2.18.2"
 
-#(set-global-staff-size 18)
-
-\paper {
-	% a4-optimized version
-	left-margin   = 40\pt
-	right-margin  = 40\pt
-	top-margin    = 40\pt
-	bottom-margin = 40\pt
-	system-system-spacing #'minimum-distance = #14
-}
+\include "config.ly"
 
 % ugly alignment details here
 vivace = \markup { \raise #1 { \halign #0.2 \bold Vivace } }
