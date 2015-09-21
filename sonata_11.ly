@@ -16,7 +16,7 @@ vlone = \relative c'' {
 	c2 r4 c ~
 	c8 c bes c des4 c ~
 	c bes8. a16 bes4 b8. c16
-	g2 r                                       % m 8
+	g2\fermata r                               % m 8
 	g'4 g8. g16 g4 aes
 	d,4. d8 es d es f
 	g a bes2 aes8 g
@@ -30,7 +30,7 @@ vlone = \relative c'' {
 	aes g f es des c bes aes
 	g g' c bes aes g bes aes                   % m 20
 	g f e d c bes aes g
-	g4. f8 f2\bar "||"
+	g4. f8 f2\fermata \bar "||"
 
 	% canzona
 	r8^\canz f' f f aes8. aes16 g aes f g
@@ -62,7 +62,7 @@ vlone = \relative c'' {
 	g8 es c'4. c8 bes4 ~
 	bes8 g g g aes8. aes16 g aes f g
 	e8 c f4. f8 e4
-	f1\bar "||"                                % m 52
+	f1\fermata \bar "||"                       % m 52
 
 	% adagio
 	c'4^\adag c8. c16 es2 ~
@@ -80,7 +80,7 @@ vlone = \relative c'' {
 	aes2 a4 bes ~
 	bes8 bes a8. g16 aes4 g8. f16
 	e2 ~ e8 e f4 ~
-	f e f2\bar "||"                            % m 68
+	f e f2\fermata \bar "||"                   % m 68
 
 	% largo
 	\time 3/4 f'4^\larg e f
@@ -158,7 +158,7 @@ vltwo = \relative c'' {
 	g8 g f g aes2 ~
 	aes4 aes g4. aes8
 	f4. f8 g4 f
-	e2 r                                  % m 8
+	e2\fermata r                          % m 8
 	es'4 es8. es16 es4 f
 	b,4. b8 c b c d
 	es f g4 c,2 ~
@@ -299,7 +299,7 @@ basso = \relative c {
 	aes4. g8 f4. f8
 	e2 es
 	d des
-	c r                                  % m 8
+	c\fermata r                          % m 8
 	c'4. c8 f,2
 	g4. g8 g4 f
 	es2 e
@@ -363,7 +363,7 @@ basso = \relative c {
 	f2 f'4. f8
 	e4 es d des
 	c2. bes4
-	c2 f,\bar "||"                       % m 68
+	c2 f,\fermata \bar "||"              % m 68
 
 	% largo
 	\time 3/4 R2.*5
@@ -572,7 +572,7 @@ continuo = {
 		c4 bes c
 		des8. c16 bes8. aes16 g8. f16       % m 132
 		bes4 c2
-		f,2.\bar "|."
+		f,2.\fermata \bar "|."
 	}
 
 	\new FiguredBass {
