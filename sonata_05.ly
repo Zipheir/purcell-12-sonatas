@@ -783,6 +783,7 @@ continuo = {
 
 \score {
 	<<
+	\override Score.Script.staff-padding = #0.8
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone
