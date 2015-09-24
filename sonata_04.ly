@@ -752,15 +752,11 @@ continuo = {
 			r1
 			<5+ 4>4 <5- 3> <4> <3>
 			<9> <8> r2
-			r1                      % m 20
-			r
-			r
-			r
+			R1*4
 
-			r1   % canzona            m 24
-			r
-			r
-			<6>
+			% canzona
+			R1*3
+			<6>1
 			r2 <2>                  % m 28
 			r4 <6> <6> r
 			r2 <7>
@@ -790,10 +786,8 @@ continuo = {
 			<6 5> <9>4 <8>
 			<9> <8> <6 5>2
 			<6 5>1
-			r                       % m 56
-			r
-			r
-			<6 5>
+			R1*3
+			<6 5>1
 
 			r2 <6+>1   % p largo      m 60
 			r1.
@@ -833,18 +827,9 @@ continuo = {
 			r
 
 			% allegro
-			r1. r r r
-			r r r r
-			r r r r
-			r r r
+			r1.*15
 			r1 <5->2
-			r1.                     % m 112
-			r r r r
-			r r r r
-			r r r r
-			r r r r
-			r r r r
-			r r
+			r1.*23
 
 			r2 <6 4>4 <5 3>
 			\bassFigureExtendersOn
@@ -870,9 +855,7 @@ continuo = {
 			<4> <3+>
 			r2 <6>4 <6>
 			<6> <6> <6-> <6>        % m 156
-			r1
-			r
-			r
+			R1*3
 			<6 5>2 <6>              % m 160
 			<6> <6>
 			r1
