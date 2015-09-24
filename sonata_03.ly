@@ -535,7 +535,7 @@ basso = \relative c' {
 
 continuo = {
 	<<
-	\new Voice \relative c {
+	\relative c {
 		\clef bass \key d \minor \time 2/2
 		d4 d' cis2
 		d4 bes fis2
