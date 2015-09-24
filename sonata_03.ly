@@ -2,19 +2,11 @@
 
 \include "config.ly"
 
-% ugly alignment details here - a4 version
-adaga = \markup { \raise #1.2 { \halign #0.2 \bold Adagio } }
-adagb = \markup { \raise #1 { \halign #-0.7 \bold Adagio } }
-alleg = \markup { \raise #2 { \halign #-0.7 \bold Allegro } }
-canz  = \markup { \raise #1 { \halign #-0.5 \bold Canzona } }
-plarg = \markup { \raise #1 { \halign #-0.5 { \bold { poco largo } } } }
-
-% letter version
-%adaga = \markup { \raise #1.2 { \halign #-0.2 \bold Adagio } }
-%adagb = \markup { \raise #1 { \halign #-0.7 \bold Adagio } }
-%alleg = \markup { \raise #2 { \halign #-0.7 \bold Allegro } }
-%canz  = \markup { \raise #1 { \halign #-0.7 \bold Canzona } }
-%plarg = \markup { \raise #1 { \halign #-0.5 { \bold { poco largo } } } }
+adaga = \markup { \bold Adagio }
+adagb = \markup { \bold Adagio }
+alleg = \markup { \bold Allegro }
+canz  = \markup { \bold Canzona }
+plarg = \markup { \bold "Poco Largo" }
 
 vlone = \relative c''' {
 	\clef treble \key d \minor \time 2/2
