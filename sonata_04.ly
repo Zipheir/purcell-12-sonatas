@@ -6,6 +6,14 @@ alleg = \markup { \bold Allegro }
 canz  = \markup { \bold Canzona }
 plarg = \markup { \bold "Poco Largo" }
 
+parp = \markup {
+	\center-align \concat {
+		\bold { \italic ( }
+		\dynamic p
+		\bold { \italic ) }
+	}
+}
+
 vlone = \relative c'' {
 	\clef treble \key f \major \time 2/2
 	c4 d8. e16 f4. d8
@@ -67,7 +75,7 @@ vlone = \relative c'' {
 	f r8 bes, g c a d               % m 56
 	bes es c f d g e a
 	f bes g c a4. a8
-	g2 a \bar "||"
+	g2 a\fermata \bar "||"
 
 	\time 3/2
 	c,2^\plarg f2. g4               % m 60
@@ -105,7 +113,7 @@ vlone = \relative c'' {
 	c a bes                         % m 92
 	a1 aes2
 	g g2. f4
-	f1. \bar "||"
+	f1.\fermata \bar "||"
 
 	R1.^\alleg                      % m 96
 	R1.
@@ -243,7 +251,7 @@ vltwo = \relative c'' {
 	r8 f d g e a f bes              % m 56
 	g c a4 bes c
 	d e4. e8 f4 ~
-	f e f2 \bar "||"
+	f e f2\fermata \bar "||"
 
 	\time 3/2 a,2 b1    % largo       m 60
 	c2. bes4 a2
@@ -280,7 +288,7 @@ vltwo = \relative c'' {
 	a f g ~                         % m 92
 	g f1 ~
 	f2 e2. f4
-	f1. \bar "||"    % repeat?
+	f1.\fermata \bar "||"    % repeat?
 
 	R1.        % allegro              m 96
 	r4 c' a d c bes
@@ -451,7 +459,7 @@ basso = \relative c {
 	d1 g,2
 	c a f                           % m 88
 	bes c1
-	f1 a,2
+	f1 a,2_\parp
 	d1 g,2
 	c a f                           % m 92
 	bes c1
@@ -606,7 +614,7 @@ continuo = {
 		a bes c2 ~                  % m 56
 		c1 ~
 		c2 ~ c8 c, d4
-		bes c f,2 \bar "||"
+		bes c f,2\fermata \bar "||"
 
 		\time 3/2   % poco largo
 		f'2 d1                      % m 60
@@ -640,11 +648,11 @@ continuo = {
 		d1 g,2                      % m 88
 		c a f
 		bes c1
-		f1 a,2
+		f1 a,2_\parp
 		d1 g,2                      % m 92
 		c a f
 		bes c1
-		f,1. \bar "||"
+		f,1.\fermata \bar "||"
 
 		r4 c'' a d c bes            % m 96
 		c a f bes a g
@@ -871,6 +879,7 @@ continuo = {
 			r1                      % m 164
 			r2 <6>
 			<4 6> <3 5>
+			r1
 		}
 	}
 	>>
@@ -885,6 +894,7 @@ continuo = {
 
 \score {
 	<<
+	\override Score.Script.staff-padding = #0.8
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone
