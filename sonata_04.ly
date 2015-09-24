@@ -338,27 +338,27 @@ vltwo = \relative c'' {
 	f'4 es d c
 	es d c2 ~
 	c4 f, bes2 ~
-	bes a                           % m 148
+	bes a                           % m 144
 	bes4 c bes a
 	g f aes g
 	f2 f'
-	b, g' ~                         % m 152
+	b, g' ~                         % m 148
 	g fis
 	g4 f e d
 	cis2 d ~
-	d4 c b a                        % m 156
+	d4 c b a                        % m 152
 	b2 c ~
 	c b
 	c4 g c bes
-	a g bes a                       % m 160
+	a g bes a                       % m 156
 	g f e d
 	c2 d
 	e f ~
-	f4 d e2                         % m 164
+	f4 d e2                         % m 160
 	f4 e d c
 	es d c bes
 	f'2 c'
-	bes a                           % m 168
+	bes a                           % m 164
 	g bes
 	a g
 	f1\fermata \bar "|."
@@ -369,172 +369,173 @@ basso = \relative c {
 	f4. g8 a4 bes ~
 	bes a bes bes,
 	c d e c
-	f2\fermata r                    % m 4
+	f2\fermata r                     % m 4
 	c4. d8 e4 f ~
 	f e f f
 	g a b g
-	c2\fermata c,4. bes8            % m 8
+	c2\fermata c,4. bes8             % m 8
 	a4 f bes2
 	a g4 f
 	r8 c' d e f g a bes
-	c d, e f g a bes c              % m 12
+	c d, e f g a bes c               % m 12
 	d e, f g a bes c c,
 	d e f g a b, c d
 	e4 e, a a
-	g2 f                            % m 16
+	g2 f                             % m 16
 	e r8 d f g
 	a bes c d e f g e,
 	f g a bes c g c bes
-	a2 g                            % m 20
+	a2 g                             % m 20
 	f4. e'8 d2
 	c4 a c2
 	f,1 \bar "||"
 
-	R1           % canzona          % m 24
-	R1
+	% canzona
+	R1*2
 	r2 f'
 	d4 e f g
-	a bes2 a4
-	bes8 bes, g c a d c e           % m 28
+	a bes2 a4                        % m 28
+	bes8 bes, g c a d c e
 	f g e a d,4 g
 	c,8 f d g e a f bes
-	g4 a bes bes, ~
-	bes a8 f c'2                    % m 32
+	g4 a bes bes, ~                  % m 32
+	bes a8 f c'2
 	a4 b c d
 	e f2 e4
-	f8 c' a d bes g e a
-	f d bes es c a g f              % m 36
+	f8 c' a d bes g e a              % m 36
+	f d bes es c a g f
 	e c f a g a16 bes c4
 	f, r r2
-	r2 r4. c'8
-	a a' f bes g c a g              % m 40
+	r2 r4. c'8                       % m 40
+	a a' f bes g c a g
 	fis e d f e g fis a
 	g a, bes es c f d c
-	b g e f g4 g'
-	e f g a                         % m 44
+	b g e f g4 g'                    % m 44
+	e f g a
 	b c2 b4
 	c8 c, a d b e c f
-	d g e c g'2
-	c, r                            % m 48
+	d g e c g'2                      % m 48
+	c, r
 	r f
 	d4 e f g
-	a bes2 a4
-	r8 bes g c a d f, bes           % m 52
+	a bes2 a4                        % m 52
+	r8 bes g c a d f, bes
 	g c e, a f d g, g'
 	e c a f c'4 c'
-	a bes c2 ~
-	c1 ~                            % m 56
+	a bes c2 ~                       % m 56
+	c1 ~
 	c2 r8 c a d
 	bes g c c, f2\fermata \bar "||"
 
-	\time 3/2    % poco largo
-	f2 d1
-	a'2. g4 f2 ~                    % m 60
+	% poco largo
+	\time 3/2 f2 d1                  % m 60
+	a'2. g4 f2 ~
 	f e4. d8 c2
 	f1 f,2
-	f'1 e2
-	d1 c2                           % m 64
+	f'1 e2                           % m 64
+	d1 c2
 	bes1.
 	a2 bes' f
-	bes1 g2
-	a f d                           % m 68
+	bes1 g2                          % m 68
+	a f d
 	g a a,
 	d1 bes2
-	es1 c2
-	d1 bes2                         % m 72
+	es1 c2                           % m 72
+	d1 bes2
 	c2 d d,
 	g1.
-	g'2 e1
-	d g2                            % m 76
+	g'2 e1                           % m 76
+	d g2
 	c, a1
 	e'1.
-	e2 c2. c4
-	f1 e2                           % m 80
+	e2 c2. c4                        % m 80
+	f1 e2
 	d2 c1
 	g' e2
-	a1 f2
-	g e c                           % m 84
+	a1 f2                            % m 84
+	g e c
 	f g g,
 	c1 a2
-	d1 g,2
-	c a f                           % m 88
+	d1 g,2                           % m 88
+	c a f
 	bes c1
 	f1 a,2_\parp
-	d1 g,2
-	c a f                           % m 92
+	d1 g,2                           % m 92
+	c a f
 	bes c1
 	f,1.\fermata \bar "||"
 
-	r4 c'' a d c bes     % allegro
-	c a f bes a g                   % m 96
+	% allegro
+	r4 c'' a d c bes                 % m 96
+	c a f bes a g
 	a f bes g c2
 	f, g1
-	c,4 f d g f e
-	f d b f' e d                    % m 100
+	c,4 f d g f e                    % m 100
+	f d b f' e d
 	e c f d g2
 	c,4 c a d c b
-	c a f bes a g
-	a f d2 e                        % m 104
+	c a f bes a g                    % m 104
+	a f d2 e
 	f bes b
 	c1 r2
-	r4 c' a d c bes
-	c a f bes a g                   % m 108
+	r4 c' a d c bes                  % m 108
+	c a f bes a g
 	a f bes g c2
 	f, g a4 f
-	bes2. bes,4 d bes
-	es c f2 f,                      % m 112
+	bes2. bes,4 d bes                % m 112
+	es c f2 f,
 	bes1 r2
 	R1.*2
-	r4 bes' g c bes a               % m 116
+	r4 bes' g c bes a
 	bes g e a g f
 	g e a f bes a
-	g2 a a,
-	d1 e2                           % m 120
+	g2 a a,                          % m 120
+	d1 e2
 	f g a
 	bes c d
-	g, d1
-	g,4 c a d c bes                 % m 124
+	g, d1                            % m 124
+	g,4 c a d c bes
 	es c f d g e
 	a f d g f e
-	f d bes es d c
-	d bes g c bes a                 % m 128
+	f d bes es d c                   % m 128
+	d bes g c bes a
 	bes a bes g a bes
 	c1. ~
-	c ~
-	c                               % m 132
+	c ~                              % m 132
+	c
 	bes2 c1
 
 	\time 2/2 f,2 f' ~
-	f e
-	f f4 e                          % m 136
+	f e                              % m 136
+	f f4 e
 	d c es d
 	c2 d
-	g, c'4 bes
-	a f bes a                       % m 140
+	g, c'4 bes                       % m 140
+	a f bes a
 	g es f es
 	d2 es4 d
-	c bes des c
-	bes a g f                       % m 144
+	c bes des c                      % m 144
+	bes a g f
 	c'2 c4 bes
 	a2 aes
-	g'4 f es d
-	f es d c                        % m 148
+	g'4 f es d                       % m 148
+	f es d c
 	b2 bes
 	a g
-	gis a
-	e' d4 c                         % m 152
+	gis a                            % m 152
+	e' d4 c
 	g'2 g,
 	c'4 bes a g
-	f e g f
-	e d c bes                       % m 156
+	f e g f                          % m 156
+	e d c bes
 	a2 bes
 	c d
-	bes c
-	d e                             % m 160
+	bes c                            % m 160
+	d e
 	f g
 	a a
-	bes1
-	c4 c, d2                        % m 164
+	bes1                             % m 164
+	c4 c, d2
 	c1
 	f,\fermata \bar "|."
 }
