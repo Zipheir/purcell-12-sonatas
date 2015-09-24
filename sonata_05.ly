@@ -2,11 +2,11 @@
 
 \include "config.ly"
 
-adaga  = \markup { \raise #0.5 { \halign #0.2 \bold Adagio } }
-adagb  = \markup { \raise #0.5 { \bold Adagio } }
-canz   = \markup { \raise #0.5 { \halign #-0.8 \bold Canzona } }
-grave  = \markup { \raise #0.5 { \halign #0.5 \bold Grave } }
-larg   = \markup { \halign #0.5 \bold Largo }
+adaga  = \markup { \bold Adagio }
+adagb  = \markup { \bold Adagio }
+canz   = \markup { \bold Canzona }
+grave  = \markup { \bold Grave }
+larg   = \markup { \bold Largo }
 
 vlone = \relative c'' {
 	\clef treble \key a \minor \time 2/2
