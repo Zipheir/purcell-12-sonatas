@@ -112,11 +112,6 @@ vlone = \relative c'' {
 	a2.\fermata \bar "||"                % m 100
 
 	\time 2/2
-% should this be used? the original does not beam
-% groups of 8 16ths, but _does_ beam groups of 4 8ths.
-%	\set Timing.beamExceptions = #'()
-%	\set Timing.baseMoment = #(ly:make-moment 1/4)
-%	\set Timing.beatStructure = #'(1 1 1 1)
 	cis4^\grave cis8. cis16 d4. d8
 	e4. e8 a,8. g16 f4
 	e4. a8 g f d'4
