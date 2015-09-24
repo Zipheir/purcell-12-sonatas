@@ -33,7 +33,7 @@ vlone = \relative c''' {
 	c b8. a b16 gis4 g
 	f e d f'8. f16
 	f( e8.) d e16 cis4 d ~
-	d cis d2 \bar "||"                    % m 24
+	d cis d2\fermata \bar "||"            % m 24
 
 	r8^\canz d d d c16 d c a bes8. c16
 	a8. f16 g a g e f8. g16 e4
@@ -74,7 +74,7 @@ vlone = \relative c''' {
 	e g f e d c bes4 ~
 	bes8 a r f' e a g f                   % m 60
 	e d c bes' a4 g8 f
-	e2 d \bar "||"
+	e2 d\fermata \bar "||"
 
 	\time 3/2
 	d^\plarg e1
@@ -212,7 +212,7 @@ vltwo = \relative c'' {
 	d2. c8. c16                       % m 20
 	c bes8. a bes16 g2 ~
 	g4 g'2 f4
-	e4. d8 d2 \bar "||"
+	e4. d8 d2\fermata \bar "||"
 	R1*2                              % m 24
 
 	% canzona
@@ -253,7 +253,7 @@ vltwo = \relative c'' {
 	b d cis b a g f f'
 	e a g c bes a c bes
 	a g f e4 d8 d4 ~                  % m 60
-	d cis d2 \bar "||"
+	d cis d2\fermata \bar "||"
 
 	\time 3/2         % poco largo
 	f, bes1
@@ -390,7 +390,7 @@ basso = \relative c' {
 	g4 f e4. e8
 	d4 c b2
 	bes a4 g
-	a2 d, \bar "||"                   % m 24
+	a2 d,\fermata \bar "||"           % m 24
 
 	R1*4    % canzona                 % m 28
 	r8 d' d d c16 d c a bes8. c16
@@ -428,7 +428,7 @@ basso = \relative c' {
 	g bes a g f e d d
 	cis f e a g f e d                 % m 60
 	c bes a g f4 e8 d
-	a'2 d,
+	a'2 d,\fermata
 
 	\time 3/2      % poco largo
 	d' g,1
@@ -908,6 +908,7 @@ continuo = {
 
 \score {
 	<<
+	\override Score.Script.staff-padding = #0.8
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone
