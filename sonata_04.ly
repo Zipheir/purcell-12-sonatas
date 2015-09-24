@@ -2,10 +2,9 @@
 
 \include "config.ly"
 
-% ugly alignment details here - a4 version
-alleg = \markup { \halign #0 \bold Allegro }
-canz  = \markup { \raise #1.6 { \halign #-0.6 \bold Canzona } }
-plarg = \markup { \raise #1.5 { \halign #0.5 \bold { Poco Largo } } }
+alleg = \markup { \bold Allegro }
+canz  = \markup { \bold Canzona }
+plarg = \markup { \bold "Poco Largo" }
 
 vlone = \relative c'' {
 	\clef treble \key f \major \time 2/2
