@@ -34,7 +34,7 @@ vlone = \relative c'' {
 	r2 r4 a,
 	bes4. bes8 a4 d ~
 	d8 d c2 bes8. a16
-	a4. g8 g2 \bar "||"                     % m 24
+	a4. g8 g2\fermata \bar "||"             % m 24
 
 	\time 3/2
 	r1.^\vivace
@@ -74,7 +74,7 @@ vlone = \relative c'' {
 	g, c8 bes a4 d g, c
 	fis, a'8 g fis4 bes e, a                % m 64
 	d, g g2. fis4
-	g1. \bar "||"
+	g1.\fermata \bar "||"
 
 	\time 2/2
 	d4^\adagio d8. d16 d2 ~
@@ -129,7 +129,7 @@ vlone = \relative c'' {
 	c a bes c d2 ~                          % m 116
 	d2. c4 ~
 	c bes a4. g8
-	g1 \bar "||"
+	g1\fermata \bar "||"
 
 	\time 3/2
 	bes'2^\largo g2. fis8( g                % m 120
@@ -185,7 +185,7 @@ vltwo = \relative c' {
 	bes4. bes8 a4 d ~
 	d8 d c2 bes8. a16
 	g4 a8. bes16 fis4 g ~
-	g fis g2 \bar "||"              % m 24
+	g fis g2\fermata \bar "||"      % m 24
 
 	\time 3/2
 	r4 d'8 c bes4 es a, d
@@ -229,7 +229,7 @@ vltwo = \relative c' {
 	e, a8 g fis4 bes e, a
 	d, fis'8 e d2 c                 % m 64
 	bes a1
-	g1. \bar "||"
+	g1.\fermata \bar "||"
 
 	\time 2/2
 	b4 b8. b16 b2 ~
@@ -284,7 +284,7 @@ vltwo = \relative c' {
 	a fis g a bes bes a g           % m 116
 	fis a g f e g fis e
 	d4 g2 fis4
-	g1 \bar "||"
+	g1\fermata \bar "||"
 
 	\time 3/2     % largo
 	d'2 d2. d4                      % m 120
@@ -337,7 +337,7 @@ basso = \relative c {
 	d4 g4. g8 fis4
 	g e f d
 	es c d g,
-	d2 g \bar "||"               % m 24
+	d2 g\fermata \bar "||"       % m 24
 
 	\time 3/2         % vivace
 	r1. r1. r1. r1.              % m 28
@@ -375,7 +375,7 @@ basso = \relative c {
 	d1. ~
 	d1. ~                        % m 64
 	d1.
-	g,1. \bar "||"
+	g,1.\fermata \bar "||"
 
 	\time 2/2         % adagio
 	g'2. g8. g16
@@ -428,7 +428,7 @@ basso = \relative c {
 	d2 ~ d8 d c bes              % m 116
 	a c bes a g bes a g
 	fis4 g d'2
-	g,1 \bar "||"
+	g,1\fermata \bar "||"
 
 	\time 3/2      % largo
 	g'2 g1 ~                     % m 120
@@ -497,7 +497,7 @@ continuo = {
 		d4 g ~ g4 fis
 		g e f d
 		es c d g,
-		d2 g \bar "||"             % m 24
+		d2 g\fermata \bar "||"      % m 24
 
 		\clef soprano \time 3/2    % vivace
 		r4 d'''8 c bes4 es a, d
@@ -553,7 +553,7 @@ continuo = {
 		d1. ~
 		d1. ~                        % m 64
 		d1.
-		g1. \bar "||"
+		g1.\fermata \bar "||"
 
 		\time 2/2         % adagio
 		g'2. g4
@@ -617,7 +617,7 @@ continuo = {
 		d2 d,                        % m 116
 		d1 ~
 		d1
-		g1 \bar "||"
+		g1\fermata \bar "||"
 
 		\time 3/2        % largo
 		g2 g'1 ~                     % m 120
@@ -773,6 +773,7 @@ continuo = {
 
 \score {
 	<<
+	\override Score.Script.staff-padding = #0.8
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone
