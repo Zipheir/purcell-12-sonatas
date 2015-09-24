@@ -2,11 +2,10 @@
 
 \include "config.ly"
 
-% ugly alignment details here
-vivace = \markup { \raise #1 { \halign #0.2 \bold Vivace } }
-adagio = \markup { \raise #1 { \bold Adagio } }
-presto = \markup { \raise #1 { \halign #-0.7 \bold Presto } }
-largo  = \markup { \raise #1.4 { \halign #0.4 \bold Largo } }
+vivace = \markup { \bold Vivace }
+adagio = \markup { \bold Adagio }
+presto = \markup { \bold Presto }
+largo  = \markup { \bold Largo }
 dalseg = \markup { \halign #-3.5 D.S. }
 
 vlone = \relative c'' {
