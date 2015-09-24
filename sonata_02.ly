@@ -662,88 +662,87 @@ continuo = {
 			\autoBeamOn
 		}
 		>> \oneVoice
-		\clef bass bes,,4            % m 92
-		c d es8 bes es4 ~
+		    \clef bass bes,,4
+		c d es8 bes es4 ~                       % m 92
 		es d c2
 		bes4 g f f'
-		g a bes8 f bes4 ~            % m 96
-		bes a aes2
+		g a bes8 f bes4 ~
+		bes a aes2                              % m 96
 		g4 f fis g
 		b,2 bes
-		a4. g8 a2                    % m 100
-		d4 bes c d
+		a4. g8 a2
+		d4 bes c d                              % m 100
 		es8 bes es2 d4
 		c2 d4 es
-		f8 c f4 ~ f es               % m 104
-		d2 c4 c
+		f8 c f4 ~ f es
+		d2 c4 c                                 % m 104
 		f g aes8 es aes4 ~
 		aes g f2
-		es d                         % m 108
-		c4 aes bes2 ~
+		es d
+		c4 aes bes2 ~                           % m 108
 		bes4 aes g g'
 		aes bes c8 g c4 ~
-		c bes fis2                   % m 112
-		g4 es b2
+		c bes fis2
+		g4 es b2                                % m 112
 		c d4 es
 		f8 c f4 ~ f es
-		d2 g4 a                      % m 116
-		bes8 f bes a g4 f
+		d2 g4 a
+		bes8 f bes a g4 f                       % m 116
 		es4. c8 f4 bes,
 		f2 bes\fermata \bar "||"
 	
-		\clef soprano \time 6/8  % allegro
-		f'''4 f8 g4 f8                % m 120
-		es4 d8 c8. f16 es8
+		% allegro
+		\clef soprano \time 6/8 f'''4 f8 g4 f8
+		es4 d8 c8. f16 es8                      % m 120
 		bes4 bes8 c4 c8
 		bes4 a8 g4 c,8
-		\clef bass f,4 f8 g4 f8      % m 124
-		es4 d8 c4 f,8
+		\clef bass f,4 f8 g4 f8
+		es4 d8 c4 f,8                           % m 124
 		bes4 bes'8 ~ bes a4 ~
 		a8 g f ~ f4 e8
-		f4 a,8 bes4 bes16 a          % m 128
-		g4 d'8 es8. d16 c8
+		f4 a,8 bes4 bes16 a
+		g4 d'8 es8. d16 c8                      % m 128
 		bes4 bes8 c4 c8
 		bes4 a8 g4.
-		a4 f'8 ~ f es d ~            % m 132
-		d c bes bes4 a8
+		a4 f'8 ~ f es d ~
+		d c bes bes4 a8                         % m 132
 		bes4 d,8 es4 f16 es
 		d4 a'8 bes c4
-		f,4. ~ f                     % m 136
-		bes bes'
+		f,4. ~ f
+		bes bes'                                % m 136
 		c4 bes8 a4 g8
 		f8. bes16 a8 g4 f8
-		es4 d8 c4 bes8               % m 140
-		a4 g8 d'4 d,8
+		es4 d8 c4 bes8
+		a4 g8 d'4 d,8                           % m 140
 		g4. ~ g
 		a bes
-		g a                          % m 144
-		d es4 d8
+		g a
+		d es4 d8                                % m 144
 		c4 bes8 a4.
 		g4 f8 bes c4
-		f4. g4 f8                    % m 148
-		es4 d8 c4.
+		f4. g4 f8
+		es4 d8 c4.                              % m 148
 		bes4 aes8 g4.
 		c c'
-		d4 c8 bes4.                  % m 152
-		a4 g8 f4.
+		d4 c8 bes4.
+		a4 g8 f4.                               % m 152
 		bes,4 bes'8 ~ bes a4 ~
 		a8 g f ~ f4 e8
-		f4. g4 f8                    % m 156
-		es4 d8 c8. f16 es8
+		f4. g4 f8
+		es4 d8 c8. f16 es8                      % m 156
 		d4 bes8 es4 d8
 		c4 bes8 f'4.
-		bes c4 bes8                  % m 160
-		a4 g8 f8. bes16 a8
+		bes c4 bes8
+		a4 g8 f8. bes16 a8                      % m 160
 		g4 f8 es4.
 		e4. f4 d8
-		g4 es8 f4 f,8                % m 164
-		bes4 f'8 g4\p a8
+		g4 es8 f4 f,8
+		bes4 f'8 g4\p a8                        % m 164
 		bes4 es,8 f4 f,8
 	
-		\time 2/2
-		bes4 r8 bes' es, f g es
-		f4 d g c,                    % m 168
-		d es f2
+		\time 2/2 bes4 r8 bes' es, f g es
+		f4 d g c,
+		d es f2                                 % m 168
 		f, bes\fermata \bar "|."
 	}
 
