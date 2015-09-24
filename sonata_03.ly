@@ -192,177 +192,176 @@ vltwo = \relative c'' {
 	f4. r16 f f4 e ~
 	e8 r16 e d4. r16 d c4 ~
 	c8 r16 c bes4 a2 ~
-	a8. b16 c4. r16 d b4 ~            % m 4
+	a8. b16 c4. r16 d b4 ~                % m 4
 	b8 r16 c a4. r16 a gis4
 	a2 c4. r16 c
 	c4 b4. r16 b a4 ~
-	a8 r16 a g4 f2                    % m 8
+	a8 r16 a g4 f2                        % m 8
 	e2 ~ e8. fis16 g4 ~
 	g8 r16 a f4. r16 g e4 ~
 	e8 r16 f d4. r16 d cis4
-	d2 f'4. r16 f                     % m 12
+	d2 f'4. r16 f                         % m 12
 	f4 e4. r16 e d4 ~
 	d8 r16 d c4. r16 c bes4 ~
 	bes a g2
-	a1
-	r4 f'8. f16 f( e8.) d e16         % m 16
+	a1                                    % m 16
+	r4 f'8. f16 f( e8.) d e16
 	cis4 a g f
 	f'8. f16 e4 ~ e8. e16 d4 ~
-	d8 r16 d cis4 d2 ~
-	d2. c8. c16                       % m 20
+	d8 r16 d cis4 d2 ~                    % m 20
+	d2. c8. c16
 	c bes8. a bes16 g2 ~
 	g4 g'2 f4
-	e4. d8 d2\fermata \bar "||"
-	R1*2                              % m 24
+	e4. d8 d2\fermata \bar "||"           % m 24
+	R1*2
 
 	% canzona
 	r8 a a a g16 a g e f8. g16
-	e8. c16 d e d b c8. d16 b4
-	a r8 bes'4 a g8 ~                 % m 28
+	e8. c16 d e d b c8. d16 b4            % m 28
+	a r8 bes'4 a g8 ~
 	g f4 e d cis8
 	d a'16 b c8 d bes c a bes
-	g a f g e f d e
-	cis d' d d c16 d c a bes8. c16    % m 32
+	g a f g e f d e                       % m 32
+	cis d' d d c16 d c a bes8. c16
 	a8. f16 g a g e f8. g16 e4
 	d r8 f'4 e d8 ~
-	d c4 b a gis8
-	a d16 e f8 g e f d e              % m 36
+	d c4 b a gis8                         % m 36
+	a d16 e f8 g e f d e
 	cis d bes c a bes g a
 	f a' a a g16 a g e f8. g16
-	e8. c16 d e d b c8. d16 b4
-	a r8 f'4 e d8 ~                   % m 40
+	e8. c16 d e d b c8. d16 b4            % m 40
+	a r8 f'4 e d8 ~
 	d c4 bes8 a16 g f e d8 g
 	e a16 b c8 c16 d e4 r8 d16 e
-	f8 f16 g a4 r r8 bes,16 c
-	d8 d16 es f4 r r8 c16 d           % m 44
+	f8 f16 g a4 r r8 bes,16 c             % m 44
+	d8 d16 es f4 r r8 c16 d
 	e8 e16 f g4 r8 f16 es d8 d16 c
-	bes8 bes16 a g8 g16 f e fis g8
-	    g fis
-	g d' d d c16 d c a bes8. c16
-	a8. f16 g a g e f8. g16 e4        % m 48
+	bes8 bes16 a g8 g16 f e fis g8 g fis
+	g d' d d c16 d c a bes8. c16          % m 48
+	a8. f16 g a g e f8. g16 e4
 	d8 f'16 e d8 d16 c bes4 a8 a'
 	a a g16 a g e f8. f16 e8. cis16
-	d e d c b8 e4 d8 cis c ~
-	c bes a a'4 g8 fis f ~            % m 52
+	d e d c b8 e4 d8 cis c ~              % m 52
+	c bes a a'4 g8 fis f ~
 	f e d d4 c8 b bes
 
 	a f e g f a g f     % adagio
-	e d a' f' e g f e
-	d c b d cis a g f ~               % m 56
+	e d a' f' e g f e                     % m 56
+	d c b d cis a g f ~
 	f e d bes' a d cis c
 	b d cis b a g f f'
-	e a g c bes a c bes
-	a g f e4 d8 d4 ~                  % m 60
+	e a g c bes a c bes                   % m 60
+	a g f e4 d8 d4 ~
 	d cis d2\fermata \bar "||"
 
-	\time 3/2         % poco largo
-	f, bes1
-	a e2
-	f g1                              % m 64
+	% poco largo
+	\time 3/2 f, bes1
+	a e2                                  % m 64
+	f g1
 	e2. f4 g2
 	a f bes
-	g2. a4 bes2
-	bes2 a2. bes4                     % m 68
+	g2. a4 bes2                           % m 68
+	bes2 a2. bes4
 	bes2 f1
 	f2 bes1
-	a2. g4 fis2
-	f g1                              % m 72
+	a2. g4 fis2                           % m 72
+	f g1
 	a2. bes4 c2
 	d b e
-	c2. c4 bes2
-	a g2. a8( bes)                    % m 76
+	c2. c4 bes2                           % m 76
+	a g2. a8( bes)
 	a2 a1
 	f2 e a
-	g2. f4 e2
-	fis2 gis a                        % m 80
+	g2. f4 e2                             % m 80
+	fis2 gis a
 	a gis2. a4
 	a2 cis,1
-	d2 c f
-	e1 d2                             % m 84
+	d2 c f                                % m 84
+	e1 d2
 	e fis g
 	g fis2. g4
-	g2 g1
-	bes2 a d                          % m 88
+	g2 g1                                 % m 88
+	bes2 a d
 	cis2. b4 a2
 	b cis d ~
-	d cis2. d4
-	d2 d1                             % m 92
+	d cis2. d4                            % m 92
+	d2 d1
 	bes2\p a d
 	cis2. b4 a2
-	b2 cis d ~
-	d cis2. d4                        % m 96
-	d2 r r
-	R1.*3                             % m 100
+	b2 cis d ~                            % m 96
+	d cis2. d4
 
 	% allegro
+	d2 r r
+	R1.*3
 	r4 d f e d c
 	b d e d c b
-	a cis d c b a
-	gis a a2. gis4                    % m 104
+	a cis d c b a                         % m 104
+	gis a a2. gis4
 	a2 d2. d4
 	d2 c2. c4
-	c2 bes4 a g f
-	e f e1                            % m 108
+	c2 bes4 a g f                         % m 108
+	e f e1
 	d4 d' c a b c
 	d4. c8 b4 g a b
-	c4. b8 a4 fis gis a
-	b a gis fis e d                   % m 112
+	c4. b8 a4 fis gis a                   % m 112
+	b a gis fis e d
 	cis a'' bes a g f
 	e g a g f e
-	d f g f e d
-	cis d d2. cis4                    % m 116
+	d f g f e d                           % m 116
+	cis d d2. cis4
 	d2 a'2. a4
 	a2 g2. g4
-	g2 f4 e d c
-	b c b1                            % m 120
+	g2 f4 e d c                           % m 120
+	b c b1
 	a2 f'2. f4
 	f2 e2. e4
-	e2 d2. d4
-	d2 d2. cis4                       % m 124
+	e2 d2. d4                             % m 124
+	d2 d2. cis4
 	d2 r4 d e d
 	cis b a cis d c
-	bes a g b c bes
-	a bes g1                          % m 128
+	bes a g b c bes                       % m 128
+	a bes g1
 	a2 a'2. a4
 	g1 ~ g4 g
-	f1 ~ f4 f
-	e2 d1                             % m 132
+	f1 ~ f4 f                             % m 132
+	e2 d1
 	c2 r r4 c
 	a f g a bes2
-	r4 bes g es f g
-	aes g f2. es4                     % m 136
+	r4 bes g es f g                       % m 136
+	aes g f2. es4
 	d bes f'1
 	bes,2 d'2. d4
-	c1 ~ c4 c
-	bes1 ~ bes4 bes                   % m 140
+	c1 ~ c4 c                             % m 140
+	bes1 ~ bes4 bes
 	a2 a2. g4
 	g1 r2
-	R1.
-	r4 d' es d c bes                  % m 144
+	R1.                                   % m 144
+	r4 d' es d c bes
 	a c d c bes a
 	g b c b a g
-	fis1 r2
-	r4 e' f e d c                     % m 148
+	fis1 r2                               % m 148
+	r4 e' f e d c
 	b d e d cis b
 	a2 d2. d4
-	d2 c2. c4
-	c2 b2. b4                         % m 152
+	d2 c2. c4                             % m 152
+	c2 b2. b4
 	b a2 a4 gis2
 	a4 e' cis a b cis
-	d2. d4 bes gis
-	a b c2. bes4                      % m 156
+	d2. d4 bes gis                        % m 156
+	a b c2. bes4
 	a a bes c d e
 	f g e2. f4
-	f a bes a g f
-	e f g f e d                       % m 160
+	f a bes a g f                         % m 160
+	e f g f e d
 	cis d e d cis b
 	a f' d b cis d
-	e4. d8 cis4 a b cis
-	d1.                               % m 164
+	e4. d8 cis4 a b cis                   % m 164
+	d1.
 	d
 	d
-	d2 cis2. d4
-	d1.\fermata \bar "|."             % m 168
+	d2 cis2. d4                           % m 168
+	d1.\fermata \bar "|."
 }
 
 basso = \relative c' {
@@ -541,179 +540,179 @@ continuo = {
 		d4 d' cis2
 		d4 bes fis2
 		g cis,
-		d4 e f d                      % m 4
+		d4 e f d                                       % m 4
 		e c d e
 		a,2 a'
 		gis a4 f
-		cis2 d                        % m 8
+		cis2 d                                         % m 8
 		gis, a4 b
 		c a bes g
 		a f g a
-		d,2 d'4 d'                    % m 12
+		d,2 d'4 d'                                     % m 12
 		cis2 d4 bes
 		fis2 g
 		a4 bes c c,
-		f2 fis          % adagio        m 16
+
+		% adagio
+		f2 fis                                         % m 16
 		g4( g) gis2
 		a4 f e d
 		cis2 d4 bes'
-		a g fis2                      % m 20
+		a g fis2                                       % m 20
 		g4 f e2
 		d4 c b2
 		bes a4 g
-		a2 d,\fermata                 % m 24
+		a2 d,\fermata                                  % m 24
 
-		\clef soprano   % canzona
-		r8 d''' d d c16 d c a bes8. c16
+		\clef soprano r8 d''' d d c16 d c a bes8. c16
 		a8. f16 g a g e f8. g16 e4
-		d a' g8 e f g                 % m 28
-		e8. c16 d8 b c d b4
-		\clef bass
-		a16 g f e d4 c bes
+		d a' g8 e f g
+		e8. c16 d8 b c d b4                            % m 28
+		\clef bass a16 g f e d4 c bes
 		a g f e
-		d a'8 f'4 e d8 ~              % m 32
-		d c4 b a gis8
+		d a'8 f'4 e d8 ~
+		d c4 b a gis8                                  % m 32
 		a d f g e f d e
 		c d bes c a bes g a
-		d,4 a'8 a' g4 f               % m 36
-		e d c b
+		d,4 a'8 a' g4 f
+		e d c b                                        % m 36
 		a16 g f e d8 bes''4 a g8 ~
 		g f4 e d cis8
-		d4 a'8 d bes c a bes          % m 40
-		g a f g e f d e
+		d4 a'8 d bes c a bes
+		g a f g e f d e                                % m 40
 		a, d, d'4 c bes
 		a g f g
-		c2 ~ c8 c' a8. g16            % m 44
-		f4 ~ f8. es16 d8. c16 bes4 ~
-		bes8. c16 d8. es16 f8. g16
-		    a8. bes16
+		c2 ~ c8 c' a8. g16
+		f4 ~ f8. es16 d8. c16 bes4 ~                   % m 44
+		bes8. c16 d8. es16 f8. g16 a8. bes16
 		c4 ~ c8. bes16 a8. g16 fis4
-		g8. f16 es8. d16 c8 bes d4    % m 48
-		g4 ~ g8. f16 es4 c
+		g8. f16 es8. d16 c8 bes d4
+		g4 ~ g8. f16 es4 c                             % m 48
 		f8 d bes4 g a
 		d2 ~ d4 d'
-		c bes a g                     % m 52
-		f8 d e4 a,8 a'4 g8
+		c bes a g
+		f8 d e4 a,8 a'4 g8                             % m 52
 		fis8 g4 f8 e es d d' ~
 		d c b bes4 a8 g4
 
-		a1         % adagio             m 56
-		a, ~
+		% adagio
+		a1
+		a, ~                                           % m 56
 		a2 ~ a8 f e a
 		g c b d cis f e a
-		g bes a g f e d4              % m 60
-		c8 f e a g f e d
+		g bes a g f e d4
+		c8 f e a g f e d                               % m 60
 		c bes a g f4 e8 d
 		a'2 d,\fermata \bar "||"
 
-		\time 3/2   % poco largo
-		d'2 g,1                       % m 64
-		a ~ a4 g'
+		% poco largo
+		\time 3/2 d'2 g,1
+		a ~ a4 g'                                      % m 64
 		f2 bes,1
 		c ~ c4 bes
-		a2 d bes                      % m 68
-		es2. c4 d2
+		a2 d bes
+		es2. c4 d2                                     % m 68
 		es f f,
 		bes1.
-		bes'2 g1                      % m 72
-		d' ~ d4 c
+		bes'2 g1
+		d' ~ d4 c                                      % m 72
 		bes2 es,1
 		f1.
-		d2 g e                        % m 76
-		a2. a,4 bes2
+		d2 g e
+		a2. a,4 bes2                                   % m 76
 		f c'1
 		f,1.
-		d'2 c f                       % m 80
-		e1 c2
+		d'2 c f
+		e1 c2                                          % m 80
 		b1 a2
 		d2 e1
-		a,1.                          % m 84
-		bes2 a d
+		a,1.
+		bes2 a d                                       % m 84
 		c1 bes2
 		a1 g2
-		c d1                          % m 88
-		g,1.
+		c d1
+		g,1.                                           % m 88
 		g'2 f bes
 		a1 f2
-		g a bes                       % m 92
-		g a a,
+		g a bes
+		g a a,                                         % m 92
 		d1.
 		g2 f bes
-		a1 f2                         % m 96
-		g a bes
+		a1 f2
+		g a bes                                        % m 96
 		g a a,
 
 		d4 \clef treble a''' bes a g f
-		e g a g f e                   % m 100
-		d f g f e d
+		e g a g f e
+		d f g f e d                                    % m 100
 		cis d d2. cis4
 		d2 f4 e d c
-		b d e d c b                   % m 104
-		b cis d c b a
+		b d e d c b
+		b cis d c b a                                  % m 104
 		gis a ~ a2 gis
 		a4 \clef bass a, bes a g f
-		e g a g f e                   % m 108
-		d f g f e d
+		e g a g f e
+		d f g f e d                                    % m 108
 		cis d ~ d2 cis
 		d a'1 ~
-		a2 g1 ~                       % m 112
-		g2 f4 e d c 
+		a2 g1 ~
+		g2 f4 e d c                                    % m 112
 		b c b1
 		a4 d bes1
-		c2 a1                         % m 116
-		bes2 g1
+		c2 a1
+		bes2 g1                                        % m 116
 		a1.
 		d2 f4 e d c
-		b d e d c b                   % m 120
-		a2 d4 c b a
+		b d e d c b
+		a2 d4 c b a                                    % m 120
 		gis a ~ a2 gis
 		a d2. c4
-		b g c2. bes4                  % m 124
-		a f bes2. a4
+		b g c2. bes4
+		a f bes2. a4                                   % m 124
 		g2 a1
 		d g2
-		a a, d                        % m 128
-		g g, c
+		a a, d
+		g g, c                                         % m 128
 		f4 d c1
 		f, f2
-		bes g1                        % m 132
-		a2 f1
+		bes g1
+		a2 f1                                          % m 132
 		g4 e f d g2
 		c1 \clef soprano c''2
 		a1 bes2 ~
-		bes g1                        % m 136
+		bes g1                                         % m 136
 		aes4 g f2. es4
 		d bes f'1
 		\clef bass bes,4 bes, bes'2 g
-		e f c                         % m 140
+		e f c                                          % m 140
 		d e bes
 		c d d,
 		g g'1 ~
-		g2 f1 ~                       % m 148
+		g2 f1 ~                                        % m 144
 		f2 es1
 		es2 d1
 		d cis2
-		d1.                           % m 152
+		d1.                                            % m 148
 		\clef soprano a''4 e' f e d c
 		b d e d cis b
 		a \clef bass a, f1
-		g2 e1                         % m 156
+		g2 e1                                          % m 152
 		f2 d1
 		e4 c d2 e
 		a,1 a'2
-		f d g ~                       % m 160
+		f d g ~                                        % m 156
 		g e1
 		f2. e4 d2
 		bes c1
-		f,1 f'2                       % m 164
+		f,1 f'2                                        % m 160
 		g1.
 		a ~
 		a ~
-		a                             % m 168
+		a                                              % m 164
 		d,
 		c
 		bes
-		a
+		a                                              % m 168
 		d,\fermata \bar "|."
 	}
 
@@ -723,50 +722,50 @@ continuo = {
 			<_>2 <4>4 <3>
 			<9>2 <6>4 <5>
 			<4> <3> <6 5>2
-			<_>4 <6> <6 5>2            % m 4
+			<_>4 <6> <6 5>2              % m 4
 			<6 5> <6+ 5>
 			<_>1
 			<6 4>4 <5 3> <9>2
-			<6>4 <5> <4> <3>           % m 8
+			<6>4 <5> <4> <3>             % m 8
 			<6 5>2 <_>4 <6>
 			<6 5>2 <6 5>
 			<6 5> <6 5>
-			<_>1                       % m 12
+			<_>1                         % m 12
 			<6 4>4 <5 3> <9>2
 			<_> <4>4 <3>
 			<9>1
-			<8>4 <7-> <6> <5>          % m 16
+			<8>4 <7-> <6> <5>            % m 16
 			<_> <7> <6> <5>
 			<_> <6> <6> <6>
 			<6 4> <5 3> <9>2
-			<6>4 <6> <6> <5>           % m 20
+			<6>4 <6> <6> <5>             % m 20
 			<_+>2 <6 _+>4 <6 3>
 			<6> <6> <6> <5>
 			<4> <3> <7> <7>
-			<_>1                       % m 24
+			<_>1                         % m 24
 
 			% canzona
 			<_>1
 			<_>
 			<_>4 <6> <7> <7>
-			<7> <7> <7> <7>8 <6+>      % m 28
+			<7> <7> <7> <7>8 <6+>        % m 28
 			<_>4 <7>8 <6> <7> <6>
 			    <7> <6>
 			<7> <6> <7> <6> <7> <6>
 			    <7> <6>
 			<_>4. <3>8 <2> <3> <2>
 			    <_>
-			<2> <3> <2> <3> <2> <3>    % m 32
+			<2> <3> <2> <3> <2> <3>      % m 32
 			    <2> <_>
 			<_>4 <6> <6 5> <6 5>
 			<6 5> <6 5> <6 5> <6 5>
 			r2 <7>8 <6> <7> <6>
-			<7> <6> <7> <6> <7> <6>    % m 36
+			<7> <6> <7> <6> <7> <6>      % m 36
 			    <7> <6>
 			r1
 			r1
 			r2 <6 5>4 <6 5>
-			<6 5> <6 5> <6 5>          % m 40
+			<6 5> <6 5> <6 5>            % m 40
 			    <6+ 5>
 			r2 \bassFigureExtendersOn
 			    <6 4>8 <6 3> <6\! 4>
@@ -774,123 +773,123 @@ continuo = {
 			<6\! 4> <6 3> <6\! 4> <6 3>
 			    <6\!> <5> <4> <3>
 			r1 \bassFigureExtendersOff
-			r2 <6>                     % m 44
+			r2 <6>                       % m 44
 			r4 <6> r2
 			r <6>8. <6->16 <6>4
 			<6->8. <6>16 <6>8. <6>16
 			    <6>2
-			r2 <6>4 <_->               % m 48
+			r2 <6>4 <_->                 % m 48
 			r2 <7>
 			r <6 4>
 			<6>4 <6> <6> <6>
-			<6>2 <7>8 <6> <5> r        % m 52
+			<6>2 <7>8 <6> <5> r          % m 52
 			<6 5>8 <6->4 <6>8 <6>4
 			    <7>8 <6>
 			<5>4 <7>8 <6> <5+> <6->
 			    <7 _+> <6 _->
 
 			r1    % adagio
-			r                          % m 56
+			r                            % m 56
 			r2 r8 <6> <6+> <_->
 			r <6> <6> <6> <6> <6> <6>
 			    <6>
 			<6> <6> <6> <6> <6> <6>
 			    <6>4
-			<7>4. <6>8 <6> r <6> <6>   % m 60
+			<7>4. <6>8 <6> r <6> <6>     % m 60
 			<6> <6> <6> <6> <7> <6> r4
 			r1
 
 			r2 <6>1    % poco largo
-			r1.                        % m 64
+			r1.                          % m 64
 			r2 <6>1
 			r1.
 			r
-			r2. <6>4 <6>2              % m 68
+			r2. <6>4 <6>2                % m 68
 			r1.
 			r
 			r
-			<_+>                       % m 72
+			<_+>                         % m 72
 			r
 			r
 			r2 <_+> r
-			r1 <6>2                    % m 76
+			r1 <6>2                      % m 76
 			r1.
 			r
 			r
-			<6>2 <5+> r                % m 80
+			<6>2 <5+> r                  % m 80
 			<5+> <6+> r
 			r1.
 			r
-			r1 <6>2                    % m 84
+			r1 <6>2                      % m 84
 			<7> <6> r
 			<5> <6> r
 			r1.
-			r                          % m 88
+			r                            % m 88
 			r
 			<6>2 <5> r
 			r <7> r
-			r1.                        % m 92
+			r1.                          % m 92
 			r
 			r
 			r
-			r                          % m 96
+			r                            % m 96
 			<6 5>2 r1
 
 			r1.   % allegro
 			r
-			r                          % m 100
+			r                            % m 100
 			r
 			r
 			<7>
-			<7>                        % m 104
+			<7>                          % m 104
 			r2 <2> r
 			r1.
 			<7>
-			<7>                        % m 108
+			<7>                          % m 108
 			r2 <2> r
 			r1.
 			<2+>2 r1
-			<2>2 r1                    % m 112
+			<2>2 r1                      % m 112
 			r1.
 			r
 			<9>2 r1
-			<9>2 r1                    % m 116
+			<9>2 r1                      % m 116
 			r1.
 			r
 			<7>
-			<7>                        % m 120
+			<7>                          % m 120
 			r2 <2> r
 			r1.
 			<6 5>2 r1
-			<6 5>2 r1                  % m 124
+			<6 5>2 r1                    % m 124
 			<6 5>2 r1
 			r <6>4 <5>
 			r1.
-			<_+>                       % m 128
+			<_+>                         % m 128
 			r
 			r
 			<6 5>
-			<6 5>                      % m 132
+			<6 5>                        % m 132
 			<6 5>2 <6 5> r
 			r1.
 			r
-			r2 <6->1                   % m 136
+			r2 <6->1                     % m 136
 			r1.
 			r
 			r
-			<6 5>                      % m 140
+			<6 5>                        % m 140
 			<6 5>
 			<6 5>
 			r
-			<2>                        % m 144
+			<2>                          % m 144
 			<2>
 			<2>
 			<2>
-			r                          % m 148
+			r                            % m 148
 			r
 			r
 			r
-			<6 5>                      % m 152
+			<6 5>                        % m 152
 			<6 5>
 			<6 5+>
 			R1.*15
