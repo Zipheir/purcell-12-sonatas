@@ -603,9 +603,7 @@ continuo = {
 	\new FiguredBass {
 		\override FiguredBass.BassFigure #'font-size = #-1
 		\figuremode {
-			r1
-			r
-			r
+			R1*3
 			r2 <_+>                         % m 4
 			r2. <7>4
 			<6 5>2 <_+>4 <6->
@@ -649,9 +647,7 @@ continuo = {
 			<5 9>2 <6 8> r
 			<7> <6> r
 			<7>1.                           % m 44
-			r
-			r
-			r
+			R1.*3
 			<5>2 <6> <6>                    % m 48
 			<6+>1.
 			<4>2 <3+> r
@@ -661,7 +657,7 @@ continuo = {
 			<6> r <6 5>
 			<7+> r <4>
 			<6> <4> <3>                     % m 56
-			r1. r r
+			R1.*3
 			r1 <6>2                         % m 60
 			<2> r1
 			r1.
@@ -706,9 +702,7 @@ continuo = {
 			<6> <6> <7> <7>
 
 			% presto
-			r1                              % m 100
-			r
-			r
+			R1*3                            % m 100
 			<6>8 <6> r2.
 			r1                              % m 104
 			r4 <6> r2
