@@ -2,9 +2,9 @@
 
 \include "config.ly"
 
-alleg = \markup { \raise #0.5 { \halign #-0.5 \bold Allegro } }
-canz  = \markup { \raise #0.5 { \halign #-0.8 \bold Canzona } }
-larg  = \markup { \raise #0.8 { \halign #-0.5 \bold Largo } }
+alleg = \markup { \bold Allegro }
+canz  = \markup { \bold Canzona }
+larg  = \markup { \bold Largo }
 
 parp = \markup {
 	\center-align \concat {
