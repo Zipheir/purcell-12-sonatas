@@ -36,8 +36,8 @@ vlone = \relative c'' {
 	a4. g8 g2\fermata \bar "||"             % m 24
 
 	\time 3/2
-	r1.^\vivace
-	r1. r1. r1.                             % m 28
+	R1.^\vivace
+	R1.*3                                   % m 28
 	r4 g'8 f e4 a d, g
 	c, f8 es d4 g c, f
 	bes,4 es8 d c4 f bes, es
@@ -46,7 +46,7 @@ vlone = \relative c'' {
 	bes g c a bes g
 	a c f d es c
 	d2 r r                                  % m 36
-	r1. r1. r1.
+	R1.*3
 	r4 e, a f g e                           % m 40
 	f d g e f d
 	e c f d c cis
@@ -315,7 +315,7 @@ vltwo = \relative c' {
 
 basso = \relative c {
 	\clef bass \key g \minor \time 2/2
-	r1 r1 r1
+	R1*3
 	r4 g bes4. bes8              % m 4
 	a4 d4. d8 cis4
 	d e f2
@@ -339,8 +339,7 @@ basso = \relative c {
 	d2 g\fermata \bar "||"       % m 24
 
 	\time 3/2         % vivace
-	r1. r1. r1. r1.              % m 28
-	r1. r1. r1. r1.              % m 32
+	R1.*8
 	r4 d'8 c bes4 es a, d
 	g, c8 bes a4 d g, c
 	f, f'8 es d4 g c, f
@@ -390,8 +389,8 @@ basso = \relative c {
 	es d
 	c d
 	g, r
-	r1                           % m 80
-	r1 r1 r1          % presto
+	R1                           % m 80
+	R1*3          % presto
 	r4 a' bes4. a16 g            % m 84
 	a8 d, d' c bes a g f
 	es c c'2 b4
