@@ -33,7 +33,7 @@ vlone = \relative c'' {
 	a4. g16 f bes4. a8
 	g a16 bes c4 fis, g ~              % m 16
 	g fis g2
-	r1
+	R1
 	d2 e
 	fis2. e8 d                         % m 20
 	g2. fis4

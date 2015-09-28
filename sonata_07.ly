@@ -77,7 +77,7 @@ vlone = \relative c'' {
 	c b b e e c d d                   % m 52
 	d g, a b b4. c8
 	c4 r r2
-	r1
+	R1
 	r4 f e d                          % m 56
 	cis c b bes
 	a d2 cis4

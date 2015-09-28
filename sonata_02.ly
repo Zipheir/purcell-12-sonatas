@@ -12,7 +12,7 @@ vlone = \relative c'' {
 	\clef treble \key bes \major \time 2/2
 	r4 bes d f ~
 	f8 f, bes8. c16 a2
-	r1
+	R1
 	r8 f' d d16 es f8 bes, a a16 bes        % m 4
 	c8 a f4 r2
 	r2 r4 bes
@@ -42,8 +42,7 @@ vlone = \relative c'' {
 
 	\time 3/2
 	\mark \largo
-	r1.
-	r1.
+	R1.*2
 	bes'2 a2. g4                            % m 32
 	f2. g4 aes2
 	g f2. es4
@@ -79,7 +78,7 @@ vlone = \relative c'' {
 	g bes f bes es, bes' d, bes'
 	c, a' bes4 r bes                        % m 64
 	aes g f r
-	r1
+	R1
 	g8 g16 g f8 g es aes d, g
 	c, f4 e8 f2                             % m 68
 	f8 f16 f es8 f d f d g
@@ -176,7 +175,7 @@ vlone = \relative c'' {
 	d4 d8 c4 c8
 	bes4 a8 g4.
 	f4. r
-	r r                                     % m 156
+	R2.                                     % m 156
 	f'4 f8 g4 g8
 	es4 es8 c8. f16 es8
 	d4. es,4 es8
@@ -196,7 +195,7 @@ vlone = \relative c'' {
 
 vltwo = \relative c' {
 	\clef treble \key bes \major \time 2/2
-	r1
+	R1
 	r2 r4 f
 	a c4. c,8 es8. f16
 	d2 r                              % m 4
@@ -227,8 +226,7 @@ vltwo = \relative c' {
 	bes a bes2\fermata \bar "||"
 
 	\time 3/2    % largo
-	r1. r1. r1.                       % m 32
-	r1.
+	R1.*4                             % m 32
 	es2 d2. c4
 	bes2. c4 d2
 	c bes2. a4                        % m 36
@@ -257,7 +255,7 @@ vltwo = \relative c' {
 	f bes es, bes' d, bes' c, a'
 	bes4 a g f
 	c f r2
-	r1                                % m 60
+	R1                                % m 60
 	f'8 f16 f es8 f d f c f
 	bes, f' aes, f' g, es'4 d8
 	es4 d c bes
@@ -267,7 +265,7 @@ vltwo = \relative c' {
 	g, c4 b8 c2
 	c8 c16 c bes8 c a d g, c          % m 68
 	f,8 bes4 a8 bes4 r
-	r1
+	R1
 	r2 f'8 f16 f es8 f
 	d d c d es4 d                     % m 72
 	c bes a2
@@ -320,8 +318,7 @@ vltwo = \relative c' {
 	c2 d\fermata \bar "||"
 
 	\time 6/8            % allegro
-	r2.
-	r2.                               % m 120
+	R2.*2
 	bes4 bes8 c4 c8
 	bes4 a8 g8. c16 bes8
 	a4 f'8 f es d
@@ -377,9 +374,7 @@ vltwo = \relative c' {
 
 basso = \relative c {
 	\clef bass \key bes \major \time 2/2
-	r1
-	r1
-	r1
+	R1*3
 	r4 bes d f ~                       % m 4
 	f8 f, bes8. c16 a2
 	r8 bes' g g16 a bes8 f d d16 es
@@ -437,8 +432,7 @@ basso = \relative c {
 
 	\time 2/2            % presto
 	bes4 r r2                          % m 56
-	r1
-	r1
+	R1*2
 	r4 f'8 f16 f es8 f d f
 	c f bes, f' a, f' g, e'            % m 60
 	f2 bes4 aes
@@ -472,7 +466,7 @@ basso = \relative c {
 	g f
 	es' des                            % m 88
 	c bes
-	r1
+	R1
 	r2 r4 bes4          % vivace
 	c d es8 bes es4 ~                  % m 92
 	es d c2
@@ -503,8 +497,7 @@ basso = \relative c {
 	f2 bes\fermata \bar "||"
 
 	\time 6/8           % allegro
-	r2. r2.                            % m 120
-	r2. r2.
+	R2.*4                              % m 120
 	f'4 f8 g4 g8
 	es4 d8 c8. f16 es8                 % m 124
 	d4 bes'8 bes a a

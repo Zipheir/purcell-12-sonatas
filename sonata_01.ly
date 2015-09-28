@@ -165,7 +165,7 @@ vlone = \relative c'' {
 
 vltwo = \relative c' {
 	\clef treble \key g \minor \time 2/2
-	r1
+	R1
 	r4 d es4. es8
 	d4 g4. g8 fis4
 	g4. a16 bes f4 g8. g'16         % m 4
@@ -359,8 +359,7 @@ basso = \relative c {
 	bes g c a bes g
 	c f, c'1
 	f,2 r r
-	r1.                          % m 48
-	r1.
+	R1.*2                        % m 48
 	r4 g' c a bes g
 	a f g es f d
 	es c f d es c                % m 52
