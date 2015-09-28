@@ -2,8 +2,7 @@
 
 \include "config.ly"
 
-adaga = \markup { \bold Adagio }
-adagb = \markup { \bold Adagio }
+adag  = \markup { \bold Adagio }
 alleg = \markup { \bold Allegro }
 canz  = \markup { \bold Canzona }
 plarg = \markup { \bold "Poco Largo" }
@@ -17,7 +16,7 @@ vlone = \relative c''' {
 	c4. r16 d b4 b8. a16
 	a2 e'4. r16 e
 	e4 d8. e16 c4 d8. c32( d)
-	e4. r16 e e8. a,16 d4 ~               % m 8
+	e4. r16 e e8. a,16 d4 ~               % m 80
 	d8 d c8. b16 c8. d16 b8. c16
 	a4. r16 bes g4. r16 a
 	f4. r16 g e4 e8. d16
@@ -25,7 +24,8 @@ vlone = \relative c''' {
 	a4 g8. a16 f4 g8. f32( g)
 	a4. a8 d,4 g ~
 	g8 r16 c, f4. f8 f8. e16
-	f4 es8.^\adaga es16 es( d8.) c d16    % m 16
+	\mark \adag
+	    f4 es8. es16 es( d8.) c d16       % m 16
 	b1
 	r4 d c bes'8. bes16
 	bes( a8.) g a16 f4. r16 g
@@ -35,7 +35,8 @@ vlone = \relative c''' {
 	f( e8.) d e16 cis4 d ~
 	d cis d2\fermata \bar "||"            % m 24
 
-	r8^\canz d d d c16 d c a bes8. c16
+	\mark \canz
+	r8 d d d c16 d c a bes8. c16
 	a8. f16 g a g e f8. g16 e4
 	d r8 f'4 e d8 ~
 	d c4 b a gis8                         % m 28
@@ -67,7 +68,8 @@ vlone = \relative c''' {
 	a8 a'4 g8 f4 e                        % m 52
 	d8 es4 d8 c c'4 bes8
 	a8 a4 g8 fis f4 e8
-	cis4.^\adagb bes8 a c b d
+	\mark \adag
+	cis4. bes8 a c b d
 	cis f e a g bes a g                   % m 56
 	f a g f e d cis c
 	bes a g f e d g f'
@@ -76,8 +78,8 @@ vlone = \relative c''' {
 	e d c bes' a4 g8 f
 	e2 d\fermata \bar "||"
 
-	\time 3/2
-	d^\plarg e1
+	\time 3/2 \mark \plarg
+	d e1
 	cis2. b4 a2                           % m 64
 	a2 bes1
 	g2. f4 e2
@@ -113,7 +115,8 @@ vlone = \relative c''' {
 	g1 f2                                 % m 96
 	e e2. d4
 
-	d^\alleg a' bes a g f
+	\mark \alleg
+	d a' bes a g f
 	e g a g f e
 	d f g f e d                           % m 100
 	cis d d2. cis4
@@ -908,6 +911,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
+	\override Score.RehearsalMark #'font-size = #0
+	\override Score.RehearsalMark #'self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

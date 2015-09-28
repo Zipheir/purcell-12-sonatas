@@ -41,7 +41,8 @@ vlone = \relative c'' {
 	c4. bes8 bes2\fermata \bar "||"
 
 	\time 3/2
-	r1.^\largo
+	\mark \largo
+	r1.
 	r1.
 	bes'2 a2. g4                            % m 32
 	f2. g4 aes2
@@ -66,7 +67,9 @@ vlone = \relative c'' {
 	d2 c2. bes4
 	c2 c1
 
-	\time 2/2 d4^\presto r r2               % m 56
+	\time 2/2
+	\mark \presto
+	d4 r r2                                 % m 56
 	r2 f8 f16 f es8 f
 	d f c f bes, f' a, f'
 	g, e' f4 r f
@@ -90,7 +93,8 @@ vlone = \relative c'' {
 	c2 d \bar "||"
 
 	\time 2/2
-	bes4^\adagio bes8. g16 aes4. bes8
+	\mark \adagio
+	bes4 bes8. g16 aes4. bes8
 	g4. g8 a4 bes ~
 	bes a bes2                              % m 80
 	f'4 f8. d16 es4. f8
@@ -101,7 +105,8 @@ vlone = \relative c'' {
 	des2 c
 	bes a
 	ges' f                                  % m 88
-	es d4 bes^\vivace
+	es d4 bes
+	\mark \vivace
 	d e f8 c f4 ~
 	f es2 d4
 	c2 bes                                  % m 92
@@ -133,7 +138,8 @@ vlone = \relative c'' {
 	bes a bes2\fermata \bar "||"
 
 	\time 6/8
-	f4^\allegro f8 g4 g8
+	\mark \allegro
+	f4 f8 g4 g8
 	es4 d8 c8. f16 es8                      % m 120
 	d4 bes'8 bes a a
 	a g f f4 e8
@@ -941,6 +947,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
+	\override Score.RehearsalMark #'font-size = #0
+	\override Score.RehearsalMark #'self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

@@ -43,7 +43,7 @@ vlone = \relative c'' {
 	a1 \bar "||"
 
 	% largo
-	\time 3/2 e'2^\larg e e
+	\time 3/2 \mark \larg e'2 e e
 	d d d
 	cis fis fis                                    % m 36
 	fis e e
@@ -99,7 +99,8 @@ vlone = \relative c'' {
 	a1. \bar "||"
 
 	% grave
-	\time 2/2 cis4^\grave cis8. cis16 cis4 d4      % m 88
+	\time 2/2 \mark \grave
+	cis4 cis8. cis16 cis4 d4                       % m 88
 	a a8. a16 a4 b
 	fis2 r
 	fis'4 fis8. fis16 fis4 a
@@ -111,9 +112,10 @@ vlone = \relative c'' {
 	e4 d cis c8. c16
 	b4 a gis f'8. f16
 	e4 d2 c4
-	b4. a8 a2^\prest                               % m 100
+	b4. a8 a2                                      % m 100
 
 	% presto
+	\mark \prest
 	R1
 	r2 r8 b e gis
 	fis e a gis fis gis16 a b8 a
@@ -754,6 +756,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
+	\override Score.RehearsalMark #'font-size = #0
+	\override Score.RehearsalMark #'self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

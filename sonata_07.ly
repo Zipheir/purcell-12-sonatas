@@ -5,6 +5,7 @@
 adag = \markup { \bold Adagio }
 canz = \markup { \bold Canzona }
 grav = \markup { \bold Grave }
+larg = \markup { \bold Largo }
 viv  = \markup { \bold "Allegro/Vivace" }
 
 parp = \markup {
@@ -44,7 +45,9 @@ vlone = \relative c'' {
 	gis4 g fis4. e8
 	e1\fermata \bar "||"
 
-	r8^\canz b' e e e d g g       % canzona
+	% canzona
+	\mark \canz
+	r8 b' e e e d g g
 	g fis fis b b e, a a              % m 28
 	a dis, e fis fis4. e8
 	e8. fis16 g8. a16 fis4. fis8
@@ -92,7 +95,8 @@ vlone = \relative c'' {
 	g4. fis8 fis4. e8
 	e1\fermata \bar "||"
 
-	\time 3/4     % largo
+	% largo
+	\time 3/4 \mark \larg
 	g'4 fis4. e8                      % m 72
 	fis4. g8 fis8. g16
 	a4 g4. fis8
@@ -123,8 +127,9 @@ vlone = \relative c'' {
 	fis fis4. e8
 	e2. \bar "||"
 
-	\time 2/2    % grave
-	b4^\grav b8. b16 b8( a)
+	% grave
+	\time 2/2 \mark \grav
+	b4 b8. b16 b8( a)
 	    \shape #'((0 . 0) (0.3 . -0.4) (0.3 . -0.5) (0 . -0.3)) Slur
 	    c( b)                         % m 100
 	fis4. fis8 g fis g a
@@ -144,8 +149,9 @@ vlone = \relative c'' {
 	g( fis) a( g) fis4. e8            % m 112
 	e1\fermata \bar "||"
 
-	\time 3/4    % vivace
-	r4^\viv b' a
+	% vivace
+	\time 3/4 \mark \viv
+	r4 b' a
 	g c b
 	a fis b                           % m 116
 	e, cis' cis
@@ -214,7 +220,8 @@ vlone = \relative c'' {
 	a4. b8 g4                         % m 180
 	fis fis4. e8
 
-	\time 2/2 e4^\adag r r2     % adagio
+	% adagio
+	\time 2/2 \mark \adag e4 r r2
 	r2 r4 a8 g
 	fis4 b8 a g e a4                  % m 184
 	dis, e2 dis4
@@ -1021,6 +1028,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
+	\override Score.RehearsalMark #'font-size = #0
+	\override Score.RehearsalMark #'self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

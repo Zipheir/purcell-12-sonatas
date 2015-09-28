@@ -2,11 +2,12 @@
 
 \include "config.ly"
 
-vivace = \markup { \bold Vivace }
 adagio = \markup { \bold Adagio }
-presto = \markup { \bold Presto }
-largo  = \markup { \bold Largo }
 dalseg = \markup { \halign #-3.5 D.S. }
+largo  = \markup { \bold Largo }
+presto = \markup { \bold Presto }
+seg    = \markup { \small \musicglyph #"scripts.segno" }
+vivace = \markup { \bold Vivace }
 
 vlone = \relative c'' {
 	\clef treble \key g \minor \time 2/2
@@ -36,8 +37,8 @@ vlone = \relative c'' {
 	a4. g8 g2\fermata \bar "||"             % m 24
 
 	\time 3/2
-	R1.^\vivace
-	R1.*3                                   % m 28
+	\mark \vivace
+	R1.*4
 	r4 g'8 f e4 a d, g
 	c, f8 es d4 g c, f
 	bes,4 es8 d c4 f bes, es
@@ -76,7 +77,8 @@ vlone = \relative c'' {
 	g1.\fermata \bar "||"
 
 	\time 2/2
-	d4^\adagio d8. d16 d2 ~
+	\mark \adagio
+	d4 d8. d16 d2 ~
 	d4 es8. f16 d4. c8                      % m 68
 	c2 r4 es8. es16
 	es8( a,4) a8 a4 a'8. a16
@@ -88,7 +90,8 @@ vlone = \relative c'' {
 	f8( c4) c8 c4 d8. d16                   % m 76
 	d8( g,) c8. c16 c8( fis,8) fis8. fis16
 	g4 g8. a16 fis4. g8
-	g2^\presto r
+	\mark \presto
+	g2 r
 	r2 r4 d'                                % m 80
 	es4. d16 c d8 g, g' f
 	es d c bes a f f'4 ~
@@ -131,7 +134,8 @@ vlone = \relative c'' {
 	g1\fermata \bar "||"
 
 	\time 3/2
-	bes'2^\largo g2. fis8( g                % m 120
+	\mark \largo
+	bes'2 g2. fis8( g                       % m 120
 	a2) d,2. d4
 	es2 c2. bes8( c
 	d2) a2. a4
@@ -152,11 +156,11 @@ vlone = \relative c'' {
 	c2 c2. bes4
 	a2 a2. g4
 	fis2 fis2. d'4\p
-	\mark \markup { \small \musicglyph #"scripts.segno" }
+	\mark \seg
 	d4( c) c2. c4                           % m 140
 	c( bes) bes2. bes4
 	bes( a) a2. g4
-	g2 g1^\dalseg\fermata \bar "|."
+	g2 g1\fermata ^\dalseg \bar "|."
 }
 
 vltwo = \relative c' {
@@ -772,6 +776,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
+	\override Score.RehearsalMark #'font-size = #0
+	\override Score.RehearsalMark #'self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

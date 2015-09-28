@@ -11,7 +11,8 @@ prest = \markup { \bold Presto }
 
 vlone = \relative c'' {
 	\clef treble \key d \major \time 2/2
-	a4.^\adag a8 a4 b8. cis16
+	\mark \adag
+	a4. a8 a4 b8. cis16
 	d4. d8 d4 e8. fis16
 	g4. g8 g4 fis8. e16
 	fis2. g8. a16                             % m 4
@@ -27,8 +28,8 @@ vlone = \relative c'' {
 	fis1\fermata \bar "||"
 
 	% canzona
-	\time 2/2 R1^\canz
-	R1                                        % m 16
+	\time 2/2 \mark \canz
+	R1*2                                      % m 16
 	r4 e'8 e cis fis16 e d8 cis16 d
 	b8 cis16 d e8 e a, fis' b, g'
 	cis, a' d, e fis4 e
@@ -57,7 +58,8 @@ vlone = \relative c'' {
 	g a16 g fis8 e e4. d8
 	d1\fermata \bar "||"
 
-	\time 3/2 a2^\plarg a a                   % m 44
+	\time 3/2 \mark \plarg
+	a2 a a                                    % m 44
 	b cis d
 	e fis g
 	fis2. e4 d2
@@ -99,16 +101,17 @@ vlone = \relative c'' {
 	d d2\fermata \bar "||"
 
 	% grave
-	\time 2/2 a4.^\grave a8 ais4 ais          % m 84
+	\time 2/2 \mark \grave
+	a4. a8 ais4 ais                           % m 84
 	b fis8. fis16 g2 ~
 	g8 gis a4. a8 g4
 	fis8. a16 d2 d4
 	dis4 dis e2 ~                             % m 88
 	e4 d f e
 	cis c b4. b8
-	a2 r8^\prest a a a
 
-	% presto
+	\mark \prest
+	a2 r8 a a a
 	d4. fis8 e4 d                             % m 92
 	cis r8 b a a d4 ~
 	d cis2 b8 a
@@ -138,8 +141,8 @@ vlone = \relative c'' {
 	e2 fis\fermata \bar "||"
 
 	% allegro
-	\time 3/8 R4.^\alleg
-	R4.*5
+	\time 3/8 \mark \alleg
+	R4.*6
 	d'8. e16 fis8
 	g e a
 	fis4 e8
@@ -194,7 +197,8 @@ vlone = \relative c'' {
 	e e4
 
 	% adagio
-	\time 2/2 d4.^\adag c8 c4( b8.) c16
+	\time 2/2 \mark \adag
+	d4. c8 c4( b8.) c16
 	b4 r8 bes bes4( a8.) bes16                % m 180
 	a4. e8 f( e4) d8
 	d1\fermata \bar "|."
@@ -976,6 +980,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
+	\override Score.RehearsalMark #'font-size = #0
+	\override Score.RehearsalMark #'self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone
