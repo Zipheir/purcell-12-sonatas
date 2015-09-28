@@ -6,7 +6,6 @@ adag = \markup { \bold Adagio }
 canz = \markup { \bold Canzona }
 larg = \markup { \bold Largo }
 
-% note: mark typo near end of canzona
 vlone = \relative c'' {
 	\clef treble \key c \minor \time 2/2
 	c4 c8. c16 c4 des
@@ -597,12 +596,7 @@ continuo = {
 			r2 <6>                                   % m 16
 			<4+> r
 			<_-> r
-			r1
-			r                                        % m 20
-			r
-			r
-			r
-			r                                        % m 24
+			R1*6
 			<7>8 <6> <6> <6> <6>4 <_->
 			<2>2 <_->4 <5>8 <6>
 			r2. <6>4
