@@ -561,8 +561,8 @@ basso = \relative c {
 	f4. ~
 	f8 e f
 	g4.
-	c4 g8                              % m 172
-	c16 bes a8 g_\parp
+	c4 g8_\parp                        % m 172
+	c16 bes a8 g
 	f4. ~
 	f8 e f
 	g4.                                % m 176
