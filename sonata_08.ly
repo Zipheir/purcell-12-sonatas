@@ -697,46 +697,32 @@ continuo = {
 			<6 5> <_+> <6 4> r
 			r1
 			r2 <2>
-			r1                         % m 28
-			r
-			r
+			R1*3                       % m 28
 
 			r1 <6>4 <5>  % poco largo
 			r1.                        % m 32
 			<2>
-			r r r r
-			r r r r
-			<6>                        % m 42
-			r r r r
+			R1.*8
+			<6>1.                      % m 42
+			R1.*4
 			r1 <5+>2
 			r1 <_+>2                   % m 48
 			r1.
 			r
 			r1 <6>4 <5>
-			r1. r r r
+			R1.*4
 			<6>2 <5> r                 % m 56
 			r1.
 
-			r r r r         % allegro
-			r r r r
-			r r r r
-			r r r r
-			r r r r
-			r r r r
-			r r r r
-			r r r r
-			r r r
+			R1.*35         % allegro
 			r2 <7> r                   % m 93
-			r1. r r r
-			r r
+			R1.*6
 			r2 <6 4>4 <5 3> r2         % m 100
 			<6>4 <5> r1
-			r1.
-			r
-			r                          % m 104
+			R1.*3
 			r2 <6+> <5>
 			<_+> <6>4 <5> r2
-			r1. r r
+			R1.*3
 			r2 <6> r
 			r1.
 			r1 <6>2                    % m 112
@@ -745,8 +731,7 @@ continuo = {
 			<6>
 			<7>2 <6>1                  % m 116
 			<7>2 <6>1
-			r1. r r r
-			r r r
+			R1.*7
 
 			r1 r             % grave
 			<6>2 <4->4 <_+>            % m 127
