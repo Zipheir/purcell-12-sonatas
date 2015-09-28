@@ -867,9 +867,7 @@ continuo = {
 			<6+ 5> <6- 4> <4> <3>
 			r1
 
-			r1      % canzona
-			r                             % m 28
-			r
+			R1*3      % canzona
 			r4 <6> <5> r
 			<2>2 r4 <6>
 			<7>2 <2>                      % m 32
@@ -915,14 +913,12 @@ continuo = {
 			<7> <6> r2
 			r1
 
-			r2. r r r     % largo
-			<6>                           % m 76
+			R2.*4     % largo
+			<6>2.                         % m 76
 			<_+ 9>4 \bassFigureExtendersOn
 			    <_+ 8> \bassFigureExtendersOff
 			    <_->
-			r2. r r r
-			r r r r
-			r r
+			R2.*10
 			r2 <6+>4                      % m 88
 			<6> <6> r
 			r2. r
@@ -931,23 +927,19 @@ continuo = {
 			r
 			r
 			<9>2 <8 3+>4
-			r2.                           % m 96
-			r
-			r
+			R2.*3                         % m 96
 			r1     % grave
 			r2 <6 4>                      % m 100
-			r1
-			r
-			r
+			R1*3
 			r2 <6 4>                      % m 104
 			r1
 			r2 <6 4>4 <5 3>
 			<_+> <_-> <6 4> <5 3>         % m 108
 			<_+> <_-> <6 4> <5 3>
 			r <7> r2
-			r1 r r
+			R1*3
 
-			r2. r r      % allegro          m 116
+			R2.*3     % allegro             m 116
 			r4 <6+> r
 			<7>2.
 			<6+ 5>
@@ -976,8 +968,8 @@ continuo = {
 			r2 <6+>4
 			r2.
 			<_->                          % m 144
-			r2. r r
-			<6>                           % m 148
+			R2.*3
+			<6>2.                         % m 148
 			r r r
 			r4 <6> <6>                    % m 152
 			<6+> <6> <6>
@@ -996,11 +988,14 @@ continuo = {
 			<5>2 <6 4>4
 			<6>2.
 			<7>                           % m 168
-			r r r r
+			R2.*4
 			r4 <6>4. <5>8                 % m 173
-			r2. r r r
-			<6>                           % m 178
-			r r r r1
+			R2.*4
+			<6>2.                         % m 178
+			R2.*3
+
+			% adagio
+			r1
 			<2>2 <2>
 			<2> <2>                       % m 184
 			<2>1
