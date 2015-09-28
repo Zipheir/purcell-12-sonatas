@@ -104,7 +104,7 @@ vlone = \relative c'' {
 	des c c bes bes aes aes g
 	g2 ~ g8 g g f                      % m 84
 	f es es d d d' d d
-	d c c b bes4 a    % check pitches
+	d c c b bes4 a
 	r8 a' a a a g g g
 	g f f e e f f f                    % m 88
 	f e es es es d d c
@@ -566,9 +566,6 @@ basso = \relative c {
 	c\fermata \bar "|."
 }
 
-% half-notes tied across the middle of 2/2 bars are in
-% the original, despite the preference for dotted notes
-% in these places above.
 continuo = {
 	<<
 	\new Voice \relative c {
@@ -818,9 +815,7 @@ continuo = {
 			<7> <7->
 			r1
 
-			r            % canzona    m 48
-			r
-			r
+			R1*3         % canzona    m 48
 			r4 <6> r <4>
 			r <6> r8 <6> <6>4       % m 52
 			r <6> r8 <3> <2> r
@@ -837,10 +832,9 @@ continuo = {
 			    <7> <6>
 			r1                      % m 64
 			r2 r8 <3> <2> r
-			r1 r r r
-			r r
+			R1*6
 			r4 <_+> r2              % m 72
-			r1 r r
+			R1*3
 			<5>4 <6> <7- 5> <6 4>   % m 76
 			<3>2 <4>4 <3>
 			<6>4 <5> <4> <3>
@@ -861,16 +855,16 @@ continuo = {
 			<7 5> <6- 4> r2         % m 92
 			r1
 
-			r2. r     % largo
-			<2>                     % m 96
+			R2.*2     % largo
+			<2>2.                   % m 96
 			r
 			<2>
 			<9>
 			<6 5>                   % m 100
-			r r r r
-			r r r
-			<6 5>                   % m 108
-			r r
+			R2.*7
+			<6 5>2.                 % m 108
+			r
+			r
 			<6+>
 			<6>2 <6>4               % m 112
 			<6> <7>4. <6>8
@@ -893,12 +887,9 @@ continuo = {
 			<6->8 <6> <6>4 <6+>
 			r2.
 			<5>4 <6> r              % m 132
-			r2.
-			r
-			r
+			R2.*3
 
-			r4.      % allegro        m 136
-			r r
+			R4.*3      % allegro      m 136
 			r8 <6> <6+>
 			<6>4.                   % m 140
 			<7>
@@ -917,8 +908,8 @@ continuo = {
 			r8 <6> r
 			<4> <3> r
 			<2>4.                   % m 156
-			r r r
-			<2>                     % m 160
+			R4.*3
+			<2>4.                   % m 160
 			r r
 			<6>
 			r
@@ -928,8 +919,7 @@ continuo = {
 			r4 <6>8
 			r4.
 			<2>                     % m 170
-			r r r r
-			r r r
+			R4.*7
 		}
 	}
 	>>
