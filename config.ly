@@ -1,3 +1,4 @@
+% See README for license details
 #(set-default-paper-size "a4")
 #(set-global-staff-size 18)
 
