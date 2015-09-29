@@ -539,7 +539,7 @@ basso = \relative c {
 	g4 gis2
 	a4 a,2                            % m 92
 	b c4
-	a8. a'16 b8. c16 b8. a16
+	a8. a'16 b8. c16 b8._\parp a16
 	g4 gis2
 	a4 a,2                            % m 96
 	b c4
