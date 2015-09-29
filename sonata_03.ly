@@ -605,7 +605,7 @@ continuo = {
 		a2 ~ a8 f e a
 		g c b d cis f e a
 		g bes a g f e d4
-		c8 f e a g f e d                               % m 60
+		cis8 f e a g f e d                               % m 60
 		c bes a g f4 e8 d
 		a'2 d,\fermata \bar "||"
 
