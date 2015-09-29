@@ -7,7 +7,7 @@ adagio  = \markup { \bold Adagio }
 allegro = \markup { \bold Allegro }
 largo   = \markup { \bold Largo }
 presto  = \markup { \bold Presto }
-vivace  = \markup { \bold Vivace }
+vivace  = \markup { \raise #0.7 { \halign #-0.7 \bold Vivace } }
 
 vlone = \relative c'' {
 	\clef treble \key bes \major \time 2/2
@@ -105,8 +105,7 @@ vlone = \relative c'' {
 	des2 c
 	bes a
 	ges' f                                  % m 88
-	es d4 bes
-	\mark \vivace
+	es d4 bes^\vivace
 	d e f8 c f4 ~
 	f es2 d4
 	c2 bes                                  % m 92
