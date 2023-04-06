@@ -1,5 +1,5 @@
 % See LICENSE.txt for license details
-\version "2.18.2"
+\version "2.24.0"
 
 \include "config.ly"
 
@@ -151,7 +151,7 @@ vlone = \relative c''' {
 	\time 6/4    % really 12/8, so fix beaming
 	\set Timing.beamExceptions = #'()
 	\set Timing.baseMoment = #(ly:make-moment 1/8)
-	\set Timing.beatStructure = #'(3 3 3 3)
+	\set Timing.beatStructure = 3,3,3,3
 	\mark \alleg
 	c8. c16 d8 es8. d16 c8 d4 g8 g8.
 	    aes16 f8
@@ -320,7 +320,7 @@ vltwo = \relative c'' {
 	\time 6/4
 	\set Timing.beamExceptions = #'()
 	\set Timing.baseMoment = #(ly:make-moment 1/8)
-	\set Timing.beatStructure = #'(3 3 3 3)
+	\set Timing.beatStructure = 3,3,3,3
 	c,4. c' bes aes
 	g8. g16 a8 bes8. a16 g8 a4 d8 d8. es16 c8
 	d8. es16 d8 c8. b16 c8 b8. a16 g8 d'4.       % m 132
@@ -483,7 +483,7 @@ basso = \relative c {
 	\time 6/4
 	\set Timing.beamExceptions = #'()
 	\set Timing.baseMoment = #(ly:make-moment 1/8)
-	\set Timing.beatStructure = #'(3 3 3 3)
+	\set Timing.beatStructure = 3,3,3,3
 	R1.
 	g4. g' f es
 	d4 b8 c4 f,8 g'8. g16 a8 bes8. a16 g8   % m 132
@@ -653,7 +653,7 @@ continuo = {
 		\time 6/4
 		\set Timing.beamExceptions = #'()
 		\set Timing.baseMoment = #(ly:make-moment 1/8)
-		\set Timing.beatStructure = #'(3 3 3 3)
+		\set Timing.beatStructure = 3,3,3,3
 		\clef soprano c'4. c' bes aes
 		\clef bass g,, g' f es
 		d4 b8 c4 f,8 g4. g' ~                       % m 132
@@ -679,7 +679,7 @@ continuo = {
 	}
 
 	\new FiguredBass {
-		\override FiguredBass.BassFigure #'font-size = #-1
+		\override FiguredBass.BassFigure.font-size = #-1
 		\figuremode {
 			r2 <8>4 <7>
 			<_+ 7> <4 6-> <4> <3>
@@ -846,8 +846,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
-	\override Score.RehearsalMark #'font-size = #0
-	\override Score.RehearsalMark #'self-alignment-X = #-1
+	\override Score.RehearsalMark.font-size = #0
+	\override Score.RehearsalMark.self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

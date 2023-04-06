@@ -1,5 +1,5 @@
 % See LICENSE.txt for license details
-\version "2.18.2"
+\version "2.24.0"
 
 \include "config.ly"
 
@@ -940,8 +940,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
-	\override Score.RehearsalMark #'font-size = #0
-	\override Score.RehearsalMark #'self-alignment-X = #-1
+	\override Score.RehearsalMark.font-size = #0
+	\override Score.RehearsalMark.self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

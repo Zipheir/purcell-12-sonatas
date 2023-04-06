@@ -1,5 +1,5 @@
 % See LICENSE.txt for license details
-\version "2.18.2"
+\version "2.24.0"
 
 \include "config.ly"
 
@@ -7,7 +7,7 @@ adagio = \markup { \bold Adagio }
 dalseg = \markup { \halign #-3.5 D.S. }
 largo  = \markup { \bold Largo }
 presto = \markup { \bold Presto }
-seg    = \markup { \small \musicglyph #"scripts.segno" }
+seg    = \markup { \small \musicglyph "scripts.segno" }
 vivace = \markup { \bold Vivace }
 
 vlone = \relative c'' {
@@ -465,7 +465,7 @@ continuo = {
 	\new Voice \relative c'' {
 		\clef soprano \key g \minor \time 2/2
 		r4 g bes4. bes8
-		\override Voice.Stem #'direction = #UP a4
+		\override Voice.Stem.direction = #UP a4
 		<<
 		{ \voiceOne
 			  d4 ~ d c
@@ -776,8 +776,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
-	\override Score.RehearsalMark #'font-size = #0
-	\override Score.RehearsalMark #'self-alignment-X = #-1
+	\override Score.RehearsalMark.font-size = #0
+	\override Score.RehearsalMark.self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone

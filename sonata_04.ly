@@ -1,5 +1,5 @@
 % See LICENSE.txt for license details
-\version "2.18.2"
+\version "2.24.0"
 
 \include "config.ly"
 
@@ -733,7 +733,7 @@ continuo = {
 	}
 
 	\new FiguredBass {
-		\override FiguredBass.BassFigure #'font-size = #-1
+		\override FiguredBass.BassFigure.font-size = #-1
 		\figuremode {
 			r4. <6>8 <6>4 r
 			<4- 2>4 r2.
@@ -879,8 +879,8 @@ continuo = {
 \score {
 	<<
 	\override Score.Script.staff-padding = #0.8
-	\override Score.RehearsalMark #'font-size = #0
-	\override Score.RehearsalMark #'self-alignment-X = #-1
+	\override Score.RehearsalMark.font-size = #0
+	\override Score.RehearsalMark.self-alignment-X = #-1
 	\new Staff {
 		\set Staff.instrumentName = #"Violin I"
 		\vlone
