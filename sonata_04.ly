@@ -1,4 +1,4 @@
-% See README for license details
+% See LICENSE.txt for license details
 \version "2.18.2"
 
 \include "config.ly"
