@@ -20,7 +20,11 @@ the following changes:
 
 # License
 
-CC0. See LICENSE.txt for details.
+My understanding of US copyright law is that transcribing a work in
+the public domain doesn’t transform it and doesn’t allow me to
+claim copyright on the result. I have attached the CC0 public domain
+dedication to make it clear that I don’t intend to claim any rights
+to these scores or their source files.
 
 # Author
 
